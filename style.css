@@ -10,40 +10,27 @@ body{
   
 }
 
-.out{
-  background: rgba(76, 0, 130, 0.514);
-  width: 200px;
-  height: 200px;
-  margin: 0;
-  overflow: hidden;
-  flex: 1;
-}
-
-.inner{
-  background: rgb(121, 130, 0);
-  height: inherit;
-  margin: 2px;
-}
-
 
 .contain{
-width:100%;
-height:200px;
-background:rgb(255, 255, 255);
-display:flex;
+  width:100%;
+  height:600px;
+  background:url("img/left-black.jpeg");
+  background-size:cover; 
+  
+  display:flex;
 }
 
 .outside{
-height:100%;
-width:100%;
-margin:auto;
-overflow:hidden
-;display:flex;
-flex: 1;
+  height:100%;
+  width:100%;
+  margin:auto;
+  overflow:hidden
+  ;display:flex;
+  flex: 1;
 }
 
 .in{
-width:100%;
-background:rgba(156, 156, 156, 0.089);
-margin: 1px;
+  width:100%;
+  background:rgba(156, 156, 156, 0.089);
+  margin: 1px;
 }
