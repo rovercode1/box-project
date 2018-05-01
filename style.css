@@ -1,0 +1,21 @@
+.box{
+  width: inherit;
+  height: inherit;
+  
+}
+
+.out{
+  background: rgba(76, 0, 130, 0.514);
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  box-sizing: content-box;
+  margin: auto;
+  overflow: hidden;
+}
+
+.inner{
+  background: rgb(121, 130, 0);
+  height: inherit;
+  margin: 12px;
+}
