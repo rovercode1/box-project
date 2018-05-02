@@ -6,19 +6,27 @@ var idKey = {
   a:{
     id:"a",
     color:"rgba(195, 100, 144, 0.356)",
+    img:"url(img/left-black.jpeg)",
+
   },
   b:{
     id:"b",
     color:"rgba(200, 134, 86, 0.5)",
+    img:"url(img/left-woman.jpeg)",
+
 
   },
   c:{
     id:"c",
-    color:"rgba(151, 232, 154, 0.5)"
+    color:"rgba(151, 232, 154, 0.5)",
+    img:"url(img/right-black.jpeg)",
+    
   },
   d:{
     id:"d",
-    color:"rgba(151, 194, 240, 0.5)"
+    color:"rgba(151, 194, 240, 0.5)",
+    img:"url(img/right-white.jpeg)",
+
   }
 }
 
@@ -34,6 +42,8 @@ function v2(){
       if(this.id == idKey[this.id].id){
         // Change to specified background image
         this.style.background=idKey[this.id].color;
+        bg.style.backgroundImage=idKey[this.id].img;
+        bg.style.transition="0.8s";
       }
     })
   }
@@ -42,6 +52,6 @@ function v2(){
 function defaultColours() {
   for(i = 0; i < inner.length ;i++){
     inner[i].style.transition="0.2s"
-    inner[i].style.background="rgba(255, 255, 255, 0.156)";
+    inner[i].style.background="rgba(255, 255, 255, 0.256)";
   }
 }
