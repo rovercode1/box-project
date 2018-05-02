@@ -22,19 +22,28 @@ var idKey = {
   }
 }
 
+defaultColours()
 
 function v2(){
   for(i = 0; i < inner.length;i++){
     inner[i].addEventListener("click", function(){
-
-        console.log(this.id + " "+idKey[this.id].id)
+      defaultColours()
+      // Sets rest of boxes to selected colour
+      if(this.id == idKey[this.id].id){
+        this.style.background=idKey[this.id].color;
         
-      for(i = 0; i < inner.length ;i++){
-        this.style.background=colours[0];
-        inner[i].style.transition="0.2s"
-        inner[i].style.background="rgba(255, 0, 0, 0.356)";
+        // Change to specified background image
+        
+        
       }
     })
+  }
+}
+
+function defaultColours() {
+  for(i = 0; i < inner.length ;i++){
+    inner[i].style.transition="0.2s"
+    inner[i].style.background="rgba(255, 255, 255, 0.156)";
   }
 }
 
