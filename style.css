@@ -50,3 +50,7 @@ body{
 .inner-text h2{
   font-weight: 300;
 }
+
+.btn-border{
+  margin-top: 30px;
+}
