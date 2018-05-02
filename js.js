@@ -9,20 +9,22 @@ var idKey = {
   },
   b:{
     id:"b",
-    color:"red",
+    color:"rgba(200, 134, 86, 0.5)",
 
   },
   c:{
     id:"c",
-    color:"green"
+    color:"rgba(151, 232, 154, 0.5)"
   },
   d:{
     id:"d",
-    color:"blue"
+    color:"rgba(151, 194, 240, 0.5)"
   }
 }
 
 defaultColours()
+v2()
+
 
 function v2(){
   for(i = 0; i < inner.length;i++){
@@ -30,11 +32,8 @@ function v2(){
       defaultColours()
       // Sets rest of boxes to selected colour
       if(this.id == idKey[this.id].id){
-        this.style.background=idKey[this.id].color;
-        
         // Change to specified background image
-        
-        
+        this.style.background=idKey[this.id].color;
       }
     })
   }
@@ -47,7 +46,7 @@ function defaultColours() {
   }
 }
 
-v2()
+
 
 
 function v1() {
