@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .box{
@@ -40,7 +40,7 @@ body{
   font-size: 13px;
   text-align: center;
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: rgb(59, 59, 59);
   flex: 1;
 
 }
@@ -54,7 +54,21 @@ body{
 }
 
 .btn-border{
-  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  border-radius: 20px;
+  padding: 5px 20px;
+  background: rgba(255, 255, 255, 0.575);
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+  outline: none;
+}
+
+.btn-border:hover{
+  border: 1px solid rgba(49, 49, 49, 0.329);
+  background: rgb(65, 65, 65);
+  color: rgb(255, 255, 255); 
 }
 
 .btn-box{
@@ -63,4 +77,16 @@ body{
 
 .box1{
   flex: 1;
+}
+
+@media(max-width:700px){
+  .contain{
+     flex-direction: column; 
+  }
+  .inner-text{
+    font-size: 10px;
+  }
+  .box1{
+    display:none;
+  }
 }
