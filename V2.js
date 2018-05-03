@@ -1,6 +1,7 @@
 var inner = document.querySelectorAll(".in");
 var colours = ["rgba(115, 130, 33, 0.5)", "rgba(156, 156, 156, 0.089)","rgba(156, 156, 156, 0.089)",]
 var bg = document.querySelector(".contain");
+text = document.querySelector(".inner-text");
 
 var idKey = {
   a:{
@@ -44,6 +45,7 @@ function v2(){
         this.style.background=idKey[this.id].color;
         bg.style.backgroundImage=idKey[this.id].img;
         bg.style.transition="0.8s";
+        // Change text colour on certain backgrounds
       }
     })
   }
@@ -52,6 +54,6 @@ function v2(){
 function defaultColours() {
   for(i = 0; i < inner.length ;i++){
     inner[i].style.transition="0.2s"
-    inner[i].style.background="rgba(255, 255, 255, 0.256)";
+    inner[i].style.background="rgba(253, 253, 253, 0.514)"
   }
 }
